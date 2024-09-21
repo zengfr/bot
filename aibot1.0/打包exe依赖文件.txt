@@ -1,0 +1,17 @@
+打包exe依赖文件：
+
+1、WindowsBot 依赖 libxl64.dll、opencv_world453.dll、WindowsAccessBridge-64.dll、WindowsDriver.exe、libcurl.dll、opencv_videoio_ffmpeg453_64.dll
+
+2、WebBot 依赖 libcurl.dll、WebDriver.exe
+
+3、AndroidBot 手机安装apk即可
+
+5、node.js界面依赖 ScriptUI目录 下的所有文件
+
+6、部分电脑缺少环境无法启动WindowsDriver.exe和WebDriver.exe，需要安装 "提示缺少dll文件点我安装" 目录下的程序
+
+7、脱离aibote环境打包成exe不会自动生成环境变量，假如使用node.js界面调用，需要将相关依赖文件放在ScriptUI目录下，使程序直接调用
+
+8、注意 代码前 和 打包exe后，脚本 引用文件的“相对路径”区别
+
+9、WindowsBot数字人语音服务依赖：Microsoft.CognitiveServices.Speech.core.dll、Microsoft.CognitiveServices.Speech.extension.audio.sys.dll、Microsoft.CognitiveServices.Speech.extension.codec.dll、Microsoft.CognitiveServices.Speech.extension.kws.dll、Microsoft.CognitiveServices.Speech.extension.kws.ort.dll、Microsoft.CognitiveServices.Speech.extension.lu.dll、Microsoft.CognitiveServices.Speech.extension.mas.dll
